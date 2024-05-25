@@ -48,11 +48,18 @@ div.entry
     gap: 20px;
     margin-bottom: 35px;
 }
+div div a
+{
+    text-decoration: none;
+    color: #FCFAFA;
+}
 
 div.entry div.content h2
 {
     margin: 0;
+    padding: 0;
     font-size: 1.5rem;
+    max-width: fit-content;
 }
 div.gradient
 {
@@ -60,8 +67,8 @@ div.gradient
     margin-bottom: -10px;
     width: 100%;
     height: 2px;
-    background: rgb(254,109,115);
-background: linear-gradient(76deg, rgba(254,109,115,1) 0%, rgba(255,168,171,1) 0%, rgba(45,45,42,0.8787878787878788) 100%);
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 
 div.entry p.info
@@ -106,6 +113,11 @@ input:focus
 {
     outline: none;
 }
+input:autofill
+{
+    outline: none;  
+    background-color: #2d2d2a; 
+}
 button
 {
     display: block;
@@ -128,3 +140,13 @@ form h2
 }
 
 
+
+div.blog-page div.image img
+{
+    object-fit: contain;
+}
+
+div.blog-page a
+{
+ color: #FE6D73;   
+}
